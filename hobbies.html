@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hobbies — Kassandra Antonio</title>
+  <meta name="description" content="Hobbies & interests" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home — Kassandra Antonio">
+        <img src="assets/logo.svg" alt="KA monogram" class="brand-logo" />
+        <span class="brand-title">Kassandra Antonio</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary navigation">
+        <a href="about.html">About Me</a>
+        <a href="hobbies.html" aria-current="page">Hobbies</a>
+        <a href="projects.html">Projects</a>
+        <a href="connect.html">Connect</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggleHobbies" aria-expanded="false" aria-controls="mobileNavHobbies" aria-label="Open menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+
+    <div id="mobileNavHobbies" class="mobile-nav" hidden>
+      <a href="about.html">About Me</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="projects.html">Projects</a>
+      <a href="connect.html">Connect</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section card" aria-labelledby="hobbies-h">
+      <h2 id="hobbies-h" class="section-title">Hobbies & Interests</h2>
+
+      <div class="hobbies-grid">
+        <div class="hobby">
+          <div class="hobby-icon">🎨</div>
+          <div>
+            <p class="hobby-title">Digital Design &amp; Creative Arts</p>
+            <p class="muted">Exploring illustration, layout, and visual storytelling.</p>
+          </div>
+        </div>
+
+        <div class="hobby">
+          <div class="hobby-icon">💻</div>
+          <div>
+            <p class="hobby-title">Web Exploration &amp; Coding</p>
+            <p class="muted">Small websites and front-end experiments.</p>
+          </div>
+        </div>
+
+        <div class="hobby">
+          <div class="hobby-icon">📚</div>
+          <div>
+            <p class="hobby-title">Reading &amp; Storytelling</p>
+            <p class="muted">Fiction, YA literature, and creative writing.</p>
+          </div>
+        </div>
+
+        <div class="hobby">
+          <div class="hobby-icon">🎵</div>
+          <div>
+            <p class="hobby-title">Music &amp; Melody</p>
+            <p class="muted">Listening to and exploring music for inspiration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 Kassandra Antonio. Designed with a clean navy blue aesthetic.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

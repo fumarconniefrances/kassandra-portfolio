@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KA monogram">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+      .serif { font-family: 'Playfair Display', Georgia, serif; font-weight:700; fill:#0B1D3A; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="420" fill="#F9F8F6"/>
+
+  <g transform="translate(80,40)">
+    <text class="serif" x="0" y="240" font-size="300">K</text>
+    <text class="serif" x="480" y="250" font-size="300">A</text>
+
+    <path d="M160 200
+             C260 140, 420 110, 520 150
+             C620 190, 760 230, 880 160
+             L895 170
+             C780 250, 650 210, 540 180
+             C420 150, 260 200, 160 260
+             Z"
+          fill="#0B1D3A" />
+  </g>
+
+  <text x="50" y="380" font-family="'Playfair Display', Georgia, serif" font-size="36" fill="#0B1D3A" letter-spacing="3">KASSANDRA ANTONIO</text>
+</svg>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Connect — Kassandra Antonio</title>
+  <meta name="description" content="Contact and links" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home — Kassandra Antonio">
+        <img src="assets/logo.svg" alt="KA monogram" class="brand-logo" />
+        <span class="brand-title">Kassandra Antonio</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary navigation">
+        <a href="about.html">About Me</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="projects.html">Projects</a>
+        <a href="connect.html" aria-current="page">Connect</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggleConnect" aria-expanded="false" aria-controls="mobileNavConnect" aria-label="Open menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+
+    <div id="mobileNavConnect" class="mobile-nav" hidden>
+      <a href="about.html">About Me</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="projects.html">Projects</a>
+      <a href="connect.html">Connect</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section card" aria-labelledby="connect-h">
+      <h2 id="connect-h" class="section-title">Connect</h2>
+
+      <div class="connect-grid">
+        <a class="connect-card" href="mailto:kassandra@example.com">
+          <div class="connect-icon">✉️</div>
+          <div>
+            <p class="connect-label">Email</p>
+            <p class="connect-value">kassandra@example.com</p>
+          </div>
+        </a>
+
+        <a class="connect-card" href="https://github.com/" target="_blank" rel="noopener">
+          <div class="connect-icon">🐙</div>
+          <div>
+            <p class="connect-label">GitHub</p>
+            <p class="connect-value">github.com/kassandra</p>
+          </div>
+        </a>
+
+        <a class="connect-card" href="#" target="_blank" rel="noopener">
+          <div class="connect-icon">🏫</div>
+          <div>
+            <p class="connect-label">School Portal</p>
+            <p class="connect-value">Student Hub</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 Kassandra Antonio. Designed with a clean navy blue aesthetic.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KA favicon">
+  <rect width="128" height="128" rx="16" fill="#F9F8F6"/>
+  <g transform="translate(10,6)" fill="#0B1D3A">
+    <text x="2" y="82" font-family="Playfair Display, Georgia, serif" font-size="70" font-weight="700">KA</text>
+    <path d="M12 52 C32 40, 52 40, 72 50" stroke="#0B1D3A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
