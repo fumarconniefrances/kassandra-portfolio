@@ -1,66 +1,77 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About — Kassandra Antonio</title>
-  <meta name="description" content="About Kassandra Antonio" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Home — Kassandra Antonio">
-        <img src="assets/logo.svg" alt="KA monogram" class="brand-logo" />
-        <span class="brand-title">Kassandra Antonio</span>
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Kassandra Antonio</title>
+    <meta name="description" content="Learn more about Kassandra Antonio and her creative journey." />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Kassandra Antonio home">
+          <img src="assets/logo.svg" alt="Kassandra Antonio logo" class="brand-logo" />
+          <span class="brand-name">Kassandra Antonio</span>
+        </a>
 
-      <nav class="main-nav" role="navigation" aria-label="Primary navigation">
-        <a href="about.html" aria-current="page">About Me</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="about.html" class="active">About Me</a>
+          <a href="hobbies.html">Hobbies</a>
+          <a href="projects.html">Projects</a>
+          <a href="connect.html">Connect</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <a href="about.html">About Me</a>
         <a href="hobbies.html">Hobbies</a>
         <a href="projects.html">Projects</a>
         <a href="connect.html">Connect</a>
-      </nav>
+      </div>
+    </header>
 
-      <button class="nav-toggle" id="navToggleAbout" aria-expanded="false" aria-controls="mobileNavAbout" aria-label="Open menu">
-        <span class="hamburger"></span>
-      </button>
-    </div>
-
-    <div id="mobileNavAbout" class="mobile-nav" hidden>
-      <a href="about.html">About Me</a>
-      <a href="hobbies.html">Hobbies</a>
-      <a href="projects.html">Projects</a>
-      <a href="connect.html">Connect</a>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="section card" aria-labelledby="about-h">
-      <h2 id="about-h" class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div>
-          <p class="lead">I'm a high school student passionate about learning, design, and technology. This portfolio is my space to showcase my academic and creative projects as I grow and develop new skills.</p>
-
-          <p class="muted">I enjoy taking on small web experiments, creating digital art, and writing short stories. I'm actively learning front-end development and looking for ways to apply design thinking to class projects and personal explorations.</p>
+    <main class="container page-shell">
+      <section class="content-card reveal">
+        <div class="section-header">
+          <p class="eyebrow">About Me</p>
+          <h2>Learning, creating, and growing every day.</h2>
         </div>
 
-        <aside class="profile-card">
-          <div class="portrait">Photo</div>
-          <p class="muted small">Replace the placeholder with a real photo to personalize your portfolio.</p>
-        </aside>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I'm a high school student passionate about learning, design, and technology. This portfolio is my space to showcase my academic and creative projects as I grow and develop new skills.
+            </p>
+            <p>
+              I enjoy exploring creative ideas through digital design, small coding projects, and storytelling. I’m always looking for opportunities to learn, improve, and apply my ideas in real and meaningful ways.
+            </p>
+          </div>
+
+          <div class="profile-box">
+            <div class="portrait-placeholder">Photo</div>
+            <p>Replace this with a real photo to personalize your portfolio.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Kassandra Antonio. Designed with a clean navy blue aesthetic.</p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <p>© 2026 Kassandra Antonio. Designed with a clean navy blue aesthetic.</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js" defer></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

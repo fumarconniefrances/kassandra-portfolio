@@ -1,360 +1,87 @@
-/* style.css
-   Shared styles for Kassandra Antonio portfolio
-   Colors & typography follow the requested aesthetic.
-*/
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect | Kassandra Antonio</title>
+    <meta name="description" content="Connect with Kassandra Antonio." />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Kassandra Antonio home">
+          <img src="assets/logo.svg" alt="Kassandra Antonio logo" class="brand-logo" />
+          <span class="brand-name">Kassandra Antonio</span>
+        </a>
 
-:root{
-  --bg: #F9F8F6;
-  --ink: #0B1D3A;
-  --card: #FFFFFF;
-  --muted: #6B7280;
-  --accent: #0B1D3A;
-  --soft-border: rgba(11,29,58,0.04);
-  --shadow: 0 10px 28px rgba(11,29,58,0.06);
-  --radius: 14px;
-  --container: 1100px;
-}
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="about.html">About Me</a>
+          <a href="hobbies.html">Hobbies</a>
+          <a href="projects.html">Projects</a>
+          <a href="connect.html" class="active">Connect</a>
+        </nav>
 
-* { box-sizing: border-box; }
-html,body { height: 100%; }
-body{
-  margin:0;
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, "Helvetica Neue", Arial;
-  background: var(--bg);
-  color: var(--ink);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  line-height:1.55;
-}
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
-.container{
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 20px;
-}
+      <div class="mobile-menu">
+        <a href="about.html">About Me</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="projects.html">Projects</a>
+        <a href="connect.html">Connect</a>
+      </div>
+    </header>
 
-.site-header{
-  position: sticky;
-  top: 0;
-  z-index: 40;
-  background: linear-gradient(to bottom, rgba(249,248,246,0.96), rgba(249,248,246,0.88));
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(11,29,58,0.03);
-}
+    <main class="container page-shell">
+      <section class="content-card reveal">
+        <div class="section-header">
+          <p class="eyebrow">Connect</p>
+          <h2>Let’s connect and share ideas.</h2>
+        </div>
 
-.header-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 16px;
-  padding: 16px 0;
-}
+        <div class="connect-grid">
+          <a class="connect-card" href="mailto:kassandra@example.com" target="_blank" rel="noopener">
+            <span class="connect-icon">✉️</span>
+            <div>
+              <small>Email</small>
+              <strong>kassandra@example.com</strong>
+            </div>
+          </a>
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  text-decoration:none;
-  color:var(--ink);
-}
+          <a class="connect-card" href="https://github.com/" target="_blank" rel="noopener">
+            <span class="connect-icon">🐙</span>
+            <div>
+              <small>GitHub</small>
+              <strong>github.com/kassandra</strong>
+            </div>
+          </a>
 
-.brand-logo{
-  width:52px;
-  height:52px;
-  border-radius:12px;
-  background:rgba(255,255,255,0.7);
-  padding:6px;
-  object-fit:contain;
-  border: 1px solid var(--soft-border);
-  box-shadow: 0 6px 18px rgba(11,29,58,0.03);
-}
+          <a class="connect-card" href="#" target="_blank" rel="noopener">
+            <span class="connect-icon">🏫</span>
+            <div>
+              <small>School Portal</small>
+              <strong>Student Hub</strong>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
 
-.brand-title{
-  font-family: 'Playfair Display', serif;
-  font-weight:700;
-  font-size:1.1rem;
-  letter-spacing:0.02em;
-}
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Kassandra Antonio. Designed with a clean navy blue aesthetic.</p>
+      </div>
+    </footer>
 
-.main-nav{
-  display:flex;
-  gap:12px;
-  align-items:center;
-}
-
-.main-nav a{
-  color:var(--ink);
-  text-decoration:none;
-  padding:8px 10px;
-  border-radius:10px;
-  font-weight:600;
-  transition:all .18s ease;
-}
-
-.main-nav a:hover{
-  background: rgba(11,29,58,0.05);
-  transform:translateY(-2px);
-}
-
-.nav-toggle{
-  display:none;
-  background:transparent;
-  border:0;
-  padding:8px;
-  cursor:pointer;
-}
-
-.hamburger{
-  width:20px;
-  height:2px;
-  background:var(--ink);
-  display:block;
-  position:relative;
-}
-
-.hamburger::before, .hamburger::after{
-  content:'';
-  position:absolute;
-  left:0;
-  width:20px;
-  height:2px;
-  background:var(--ink);
-  transition:all .18s;
-}
-
-.hamburger::before{ top:-6px; }
-.hamburger::after{ top:6px; }
-
-.mobile-nav{
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-  padding:12px 20px 18px;
-  border-top:1px solid rgba(11,29,58,0.02);
-  background: linear-gradient(to bottom, rgba(249,248,246,0.98), rgba(249,248,246,0.98));
-}
-
-.hero{
-  display:grid;
-  grid-template-columns: 1fr 420px;
-  gap:40px;
-  align-items:center;
-  padding:48px 0 28px;
-}
-
-.hero-content{ max-width: 720px; }
-
-.hero-label{
-  font-size:12px;
-  letter-spacing:3px;
-  text-transform:uppercase;
-  color:var(--muted);
-  margin-bottom:14px;
-}
-
-.hero-title{
-  font-family:'Playfair Display', serif;
-  font-size:44px;
-  margin:0 0 16px;
-  color:var(--ink);
-  line-height:1.02;
-}
-
-.hero-sub{
-  color:var(--muted);
-  font-size:16px;
-  margin-bottom:20px;
-}
-
-.hero-actions{
-  display:flex;
-  gap:12px;
-  align-items:center;
-  margin-top:6px;
-}
-
-.btn-primary{
-  display:inline-block;
-  background:var(--accent);
-  color:#fff;
-  padding:12px 18px;
-  border-radius:12px;
-  font-weight:700;
-  box-shadow: 0 12px 28px rgba(11,29,58,0.12);
-  text-decoration:none;
-}
-
-.btn-ghost{
-  display:inline-block;
-  background:transparent;
-  color:var(--ink);
-  padding:12px 18px;
-  border-radius:12px;
-  border:1px solid var(--soft-border);
-  font-weight:600;
-  text-decoration:none;
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap:16px;
-}
-
-.preview-card{
-  background:var(--card);
-  border-radius:12px;
-  padding:16px;
-  border: 1px solid var(--soft-border);
-  box-shadow: var(--shadow);
-  transition: transform .18s ease;
-}
-.preview-card:hover{ transform: translateY(-6px); }
-
-.card{
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.98));
-  border-radius: var(--radius);
-  border: 1px solid var(--soft-border);
-  box-shadow: var(--shadow);
-  padding:22px;
-  margin: 20px 0;
-}
-
-.intro .muted{ margin:0; color:var(--muted); font-size:1.02rem; }
-
-.section-title{
-  font-family:'Playfair Display', serif;
-  font-size:1.8rem;
-  margin: 0 0 12px;
-  color:var(--ink);
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns: 1.6fr 0.8fr;
-  gap:18px;
-  align-items:start;
-}
-
-.lead{ font-size:1.05rem; color:var(--muted); margin-bottom:10px; }
-
-.profile-card{ text-align:center; }
-
-.portrait{
-  width:160px;
-  height:160px;
-  border-radius:14px;
-  background: linear-gradient(135deg, rgba(11,29,58,0.06), rgba(255,255,255,0.95));
-  border: 1px solid var(--soft-border);
-  display:grid;
-  place-items:center;
-  color:var(--muted);
-  font-weight:700;
-}
-
-.hobbies-grid{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap:16px;
-  margin-top:10px;
-}
-
-.hobby{
-  display:flex;
-  gap:14px;
-  align-items:center;
-  padding:12px;
-  border-radius:12px;
-  background:var(--card);
-  border:1px solid var(--soft-border);
-  box-shadow: 0 10px 20px rgba(11,29,58,0.03);
-}
-
-.hobby-icon{
-  width:56px;
-  height:56px;
-  border-radius:10px;
-  display:grid;
-  place-items:center;
-  background: rgba(11,29,58,0.05);
-  font-size:1.6rem;
-}
-
-.hobby-title{ margin:0; font-weight:700; }
-.hobby p{ margin:0; color:var(--muted); }
-
-.connect-grid{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-  margin-top:12px;
-}
-
-.connect-card{
-  display:flex;
-  gap:12px;
-  align-items:center;
-  padding:12px 14px;
-  border-radius:12px;
-  background:var(--card);
-  border:1px solid var(--soft-border);
-  box-shadow: 0 10px 20px rgba(11,29,58,0.03);
-  min-width: 220px;
-}
-
-.connect-icon{
-  width:44px;
-  height:44px;
-  border-radius:10px;
-  display:grid;
-  place-items:center;
-  background: rgba(11,29,58,0.05);
-}
-
-.projects-grid{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap:16px;
-}
-
-.project-card{
-  padding:16px;
-  border-radius:12px;
-  background:var(--card);
-  border:1px solid var(--soft-border);
-  box-shadow: 0 8px 22px rgba(11,29,58,0.03);
-}
-
-.btn-link{ color:var(--accent); font-weight:700; text-decoration:none; }
-
-.site-footer{
-  margin-top:36px;
-  padding:28px 0;
-  color:var(--muted);
-  text-align:center;
-}
-
-.muted{ color:var(--muted); font-size:0.98rem; }
-.small{ font-size:0.86rem; color:var(--muted); }
-
-@media (max-width: 980px){
-  .hero{ grid-template-columns: 1fr 360px; padding:36px 0; }
-}
-
-@media (max-width: 780px){
-  .main-nav{ display:none; }
-  .nav-toggle{ display:block; }
-
-  .hero{ grid-template-columns: 1fr; gap:20px; }
-  .hero-grid{ grid-template-columns: repeat(2, 1fr); }
-
-  .about-grid{ grid-template-columns: 1fr; }
-  .hobbies-grid{ grid-template-columns: 1fr; }
-  .projects-grid{ grid-template-columns: 1fr; }
-}
-
-@media (max-width: 420px){
-  .brand-title{ display:none; }
-  .brand-logo{ width:46px; height:46px; }
-  .hero-title{ font-size:28px; }
-}
+    <script src="js/script.js"></script>
+  </body>
+</html>
